@@ -17,6 +17,7 @@ hunger = 2
 happiness = 20
 waste = 0
 wastexy = {}
+
 button_press = 0
 pet_counter = 0
 walk_cycle = 0
@@ -93,7 +94,6 @@ def hearts(game_display):
         game_display.blit(full_heart, (120,215))
 
 # Poop location
-
 def poopxy(waste,pet_x,pet_y,game_display):
     global wastexy
     if int(waste) > len(wastexy):
